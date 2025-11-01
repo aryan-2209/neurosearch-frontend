@@ -12,7 +12,7 @@ function Sidebar({ onClose }) {
   const handleLogout = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4002/api/v1/user/logout",
+        "https://neurosearch-backend.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
         }

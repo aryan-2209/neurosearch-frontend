@@ -48,7 +48,7 @@ function Promt() {
       const token = localStorage.getItem("token");
 
       const { data } = await axios.post(
-        "http://localhost:4002/api/v1/deepseekai/promt",
+        "https://neurosearch-backend.onrender.com/api/v1/deepseekai/promt",
         { content: trimmed },
         {
           headers: {
